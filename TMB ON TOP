@@ -8,8 +8,8 @@ local displayName = player.DisplayName
 
 -- Create Main Window
 local window = library:AddWindow("TMB/PRIVATE SCRIPT🔥🤝", {
-    main_color = Color3.fromRGB(204, 255, 255),
-    min_size = Vector2.new(670, 1000),
+    main_color = Color3.fromRGB(255, 125, 0),
+    min_size = Vector2.new(700, 1000),
     can_resize = true,
 })
 
@@ -2533,7 +2533,7 @@ serverTab:AddButton("Remove Portals", function()
 end)
 
 serverTab:AddButton("Anti AFK", function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/SonzyxDev/GPMR/refs/heads/main/GaramondV2"))()
+     loadstring(game:HttpGet("https://obj.wearedevs.net/2/scripts/Focus%20Anti-AFK.lua"))()
 end)
 
 serverTab:AddButton("Less Lag", function()
@@ -3475,6 +3475,7 @@ end)
 timeDropdown:Add("Night")
 timeDropdown:Add("Day")
 timeDropdown:Add("Midnight")
+timeDropdown:Add("Sunset")
 
 miscTab:AddLabel("======================================================================").TextSize = 15
 
@@ -3523,10 +3524,10 @@ local modeDropdown = miscTab:AddDropdown("Select Tool", function(selection)
     SelectedMode = selection
 end)
 
-modeDropdown:Add("Weight")
-modeDropdown:Add("Pushups")
-modeDropdown:Add("Situps")
-modeDropdown:Add("Handstands")
+modeDropdown:Add("Fast Weight")
+modeDropdown:Add("Fast Pushups")
+modeDropdown:Add("Fast Situps")
+modeDropdown:Add("Fast Handstands")
 modeDropdown:Add("Fast Punch")
 modeDropdown:Add("Stomp")
 modeDropdown:Add("Ground Slam")
@@ -3643,7 +3644,7 @@ infoTab:Show()
 infoTab:AddLabel("SLHxTMB🔥").TextSize = 30
 
 infoTab:AddLabel("")
-local wLabel = infoTab:AddLabel("Close Friend: Oshiru,Angel,Bernabe,Jus,Les,Jerelle,Winst")
+local wLabel = infoTab:AddLabel("Made By Gelo♥️")
 wLabel.TextSize = 20
 wLabel.Font = Enum.Font.Arcade
 
